@@ -7,15 +7,14 @@ public class Main {
 
   public static void main(String[] args) {
 
-//
-//      person person = new person();
-//      User user = new User(person);
+//      Person Person = new Person();
+//      User user = new User(Person);
 //      user.getPerson();
 
       ClassPathXmlApplicationContext context =
-              new ClassPathXmlApplicationContext("com/fact/springapp/ioc/applicationContext.xml");
+              new ClassPathXmlApplicationContext("applicationContext.xml");
 
-      UserInterface userInterface = context.getBean("myUser", UserInterface.class);
+      UserInterface userInterface = context.getBean("user", UserInterface.class);
       userInterface.getPerson();
 
 //      PersonInterface personInterface = context.getBean("myPerson", PersonInterface.class);

@@ -4,13 +4,14 @@
          xsi:schemaLocation="http://www.springframework.org/schema/beans
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="myUser" class="com.fact.springapp.di.User">
+    <bean id="user" class="com.fact.springapp.di.User">
+        <constructor-arg ref= "person"></constructor-arg>
     </bean>
 
-    <bean id="myPerson" class="com.fact.springapp.di.person">
+    <bean id="person" class="com.fact.springapp.di.Person">
     </bean>
 
-    <bean id="mySport" class="com.fact.springapp.ioc.Football">
-   </bean>
+<!--    <bean id="mySport" class="com.fact.springapp.ioc.Football">-->
+<!--   </bean>-->
 
 </beans>

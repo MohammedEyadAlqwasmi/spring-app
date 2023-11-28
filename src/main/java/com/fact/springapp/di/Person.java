@@ -1,9 +1,9 @@
 package com.fact.springapp.di;
 
-public class person implements PersonInterface{
+public class Person implements PersonInterface{
 
     @Override
     public void begain() {
-        System.out.println("I am person");
+        System.out.println("I am Person");
     }
 }
