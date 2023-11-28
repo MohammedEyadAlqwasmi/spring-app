@@ -4,17 +4,17 @@ public class User implements UserInterface {
 
     private PersonInterface person;
 
-    public User(PersonInterface person){
-        this.person = person;
-    }
 
     @Override
     public void start(){
         System.out.println("I am user");
     }
 
+    public void setPersonInjection(PersonInterface person){
+        this.person = person;
+    }
     @Override
-   public void getPerson(){
+   public void getPersonInjection(){
    this.person.begain();
    }
 }

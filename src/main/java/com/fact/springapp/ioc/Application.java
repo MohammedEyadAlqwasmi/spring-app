@@ -8,7 +8,7 @@ public class Application {
 
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
-        Sport sport = context.getBean("mySport", Sport.class);
+        Sport sport = context.getBean("sport", Sport.class);
         sport.start();
         context.close();
 

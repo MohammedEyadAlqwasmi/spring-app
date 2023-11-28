@@ -5,13 +5,13 @@
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="user" class="com.fact.springapp.di.User">
-        <constructor-arg ref= "person"></constructor-arg>
+        <property name="personInjection" ref="person"></property>
     </bean>
+
 
     <bean id="person" class="com.fact.springapp.di.Person">
     </bean>
-
-<!--    <bean id="mySport" class="com.fact.springapp.ioc.Football">-->
+<!--   <bean id="mySport" class="com.fact.springapp.ioc.Football">-->
 <!--   </bean>-->
 
 </beans>

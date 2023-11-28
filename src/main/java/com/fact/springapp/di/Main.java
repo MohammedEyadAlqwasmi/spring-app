@@ -15,7 +15,7 @@ public class Main {
               new ClassPathXmlApplicationContext("applicationContext.xml");
 
       UserInterface userInterface = context.getBean("user", UserInterface.class);
-      userInterface.getPerson();
+      userInterface.getPersonInjection();
 
 //      PersonInterface personInterface = context.getBean("myPerson", PersonInterface.class);
 //      personInterface.begain();
