@@ -9,7 +9,7 @@
 
     <context:property-placeholder  location="file:D:\workAlqwasmi\spring-app\src\main\resources\data.properties"></context:property-placeholder>
 
-    <bean id="user" class="com.fact.springapp.di.User">
+    <bean id="user" class="com.fact.springapp.di.User" scope="prototype">
         <property name="personInjection" ref="person"></property>
         <property name="email" value="${us.Email}"></property>
         <property name="team" value="${us.Team}"></property>
