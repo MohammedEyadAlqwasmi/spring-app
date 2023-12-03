@@ -35,4 +35,12 @@ public class User implements UserInterface {
    public void getPersonInjection(){
    this.person.begain();
    }
+
+   public void doStar(){
+       System.out.println("Start");
+    }
+
+    public void doEnd(){
+        System.out.println("End");
+    }
 }

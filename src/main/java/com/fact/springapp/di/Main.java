@@ -15,14 +15,12 @@ public class Main {
               new ClassPathXmlApplicationContext("applicationContext.xml");
 
       UserInterface userInterface = context.getBean("user", UserInterface.class);
-      UserInterface userInterface1 = context.getBean("user", UserInterface.class);
-      System.out.println(userInterface);
-      System.out.println(userInterface1);
-      System.out.println(userInterface == userInterface1);
+      System.out.println(userInterface.getEmail() + "  " + userInterface.getTeam());
 //      PersonInterface personInterface = context.getBean("myPerson", PersonInterface.class);
 //      personInterface.begain();
 //      context.close();
 
+      context.close();
 
   }
   }
