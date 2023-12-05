@@ -1,4 +1,4 @@
-package com.fact.springapp.ioc;
+package com.fact.spring.ioc;
 
 public class Football implements Sport{
     public void start(){

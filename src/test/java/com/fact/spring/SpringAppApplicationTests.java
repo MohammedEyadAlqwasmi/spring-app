@@ -1,4 +1,4 @@
-package com.fact.springapp;
+package com.fact.spring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.fact.springapp.di;
+package com.fact.spring.di;
 
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -21,6 +21,5 @@ public class Main {
 //      context.close();
 
       context.close();
-
   }
   }

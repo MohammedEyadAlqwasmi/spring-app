@@ -7,21 +7,6 @@
                http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <context:property-placeholder  location="classpath:data.properties"/>
-
-    <bean id="user"
-          class="com.fact.springapp.di.User"
-          init-method="doStar"
-          destroy-method="doEnd">
-        <property name="personInjection" ref="person"></property>
-        <property name="email" value="${us.Email}"></property>
-        <property name="team" value="${us.Team}"></property>
-    </bean>
-
-
-    <bean id="person" class="com.fact.springapp.di.Person">
-    </bean>
-<!--   <bean id="mySport" class="com.fact.springapp.ioc.Football">-->
-<!--   </bean>-->
+<context:component-scan base-package="com.fact.spring.ann"></context:component-scan>
 
 </beans>

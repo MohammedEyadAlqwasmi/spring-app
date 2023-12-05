@@ -1,4 +1,4 @@
-package com.fact.springapp.di;
+package com.fact.spring.di;
 
 public class User implements UserInterface {
 

@@ -1,4 +1,4 @@
-package com.fact.springapp.ioc;
+package com.fact.spring.ioc;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
