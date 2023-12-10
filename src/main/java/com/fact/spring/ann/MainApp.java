@@ -8,8 +8,8 @@ public class MainApp {
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
 
-        MasterInterface master = context.getBean("master", MasterInterface.class);
-        master.name();
+        SportInterface sportInterface = context.getBean("tennis", SportInterface.class);
+        sportInterface.mySport();
         context.close();
     }
 }
